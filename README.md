@@ -31,6 +31,12 @@ cd turbo-mosaic-ai/turbo_rag
 
 Edit the `databricks.yml` configuration file to set the correct `host` for dev, staging and prod.
 
+Validate the bundle as follows:
+```bash
+databricks bundle validate --profile YOUR_PROFILE
+```
+
+If your configuration is correct, you should see the following message: `Validation OK!`
 Now deploy the bundle as follows:
 ```bash
 databricks bundle deploy --profile YOUR_PROFILE
