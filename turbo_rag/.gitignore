@@ -6,3 +6,7 @@ __pycache__/
 .venv/
 scratch/**
 !scratch/README.md
+
+src/archive.zip
+src/data/
+venv/
