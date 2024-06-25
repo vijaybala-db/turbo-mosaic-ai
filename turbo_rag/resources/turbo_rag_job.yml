@@ -16,12 +16,12 @@ resources:
       tasks:
         - task_key: notebook_task
           #job_cluster_key: job_cluster
-          existing_cluster_id: 0519-153932-4afgzuds
+          existing_cluster_id: ${var.existing_cluster_id}
           notebook_task:
             notebook_path: ../src/notebook.ipynb
         - task_key: 02_ingest_task
           #job_cluster_key: job_cluster
-          existing_cluster_id: 0519-153932-4afgzuds
+          existing_cluster_id: ${var.existing_cluster_id}
           notebook_task:
             notebook_path: ../src/02_ingest.ipynb
           depends_on:

@@ -6,6 +6,11 @@ bundle:
 include:
   - resources/*.yml
 
+variables:
+  existing_cluster_id:
+    description: Existing cluster running a recent DBR version
+    default: 0519-153932-4afgzuds
+
 targets:
   # The 'dev' target, for development purposes. This target is the default.
   dev:
